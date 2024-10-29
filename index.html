@@ -34,12 +34,11 @@
             rel="stylesheet"
         />
 
-        <!-- Apply font to body -->
-        <style>
-            body {
-                font-family: "Quicksand", sans-serif;
-            }
-        </style>
+        <!-- Link to Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
     </head>
     <body
         class="flex flex-col items-center justify-center min-h-screen bg-white text-gray-800 gap-y-1"
@@ -57,8 +56,8 @@
                 <br />
                 one <span class="fx fx-card">CARD</span> at a time
             </h1>
-            <p class="text-sm text-gray-600">Welcome to Black Pebble Games!</p>
-            <p class="text-sm text-gray-600 pt-5">
+            <p class="text-sm text-gray-800">Welcome to Black Pebble Games!</p>
+            <p class="text-sm text-gray-800 pt-5">
                 We’re a small studio dedicated to bringing you creative,
                 engaging card games that spark imagination and challenge minds.
                 Our current pride and joy, SWAPPA, is a fast-paced game for
@@ -69,7 +68,7 @@
 
         <div class="h-44 flex-none"></div>
         <!-- Image and Caption -->
-        <div class="flex flex-col items-center mb-8 max-w-lg">
+        <div class="flex flex-col items-center mb-8 max-w-lg max-h-screen px-4">
             <div class="mb-8">
                 <img
                     src="./public/swappa_front.png"
@@ -77,12 +76,14 @@
                     class="w-full h-full object-cover rounded-lg shadow-lg"
                 />
             </div>
-            <p class="text-gray-600 text-sm text-center">
-                Dive into a game of memory and speed! In SWAPPA, you’ll discover
-                cards, try to remember as many as possible, and race against the
-                other players in removing them from the game. Suitable for ages
-                10 to 99, it’s a card game for everyone who loves party games
-                with a bit of quick thinking.
+            <p class="text-gray-800 text-sm text-center pb-2">
+                Dive into a game of memory and speed!
+            </p>
+            <p class="text-gray-800 text-sm text-center">
+                You’ll discover cards, try to remember as many as possible, and
+                race against the other players in removing them from the game.
+                Suitable for ages 10 to 99, it’s a card game for everyone who
+                loves party games with a bit of quick thinking.
             </p>
         </div>
 
