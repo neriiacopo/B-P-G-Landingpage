@@ -48,6 +48,10 @@ section .text-gray-700 {
     transform: scale(1.01);
 }
 
+.card-nofx {
+    transition: none;
+}
+
 .card-image {
     background-image: url("./public/swappa_front.png");
     background-size: cover;

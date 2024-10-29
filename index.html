@@ -8,11 +8,16 @@
         />
         <title>Black Pebble Games</title>
 
+        <!-- Tailwind CSS -->
         <link
-            rel="icon"
-            type="image/x-icon"
-            href="./public/fx/fx-01.png"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+            rel="stylesheet"
         />
+
+        <!-- Font Awesome for Icons -->
+        <link href=
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+        rel="stylesheet" />
 
         <!-- Google Fonts -->
         <link
@@ -29,139 +34,78 @@
             rel="stylesheet"
         />
 
-        <!-- Tailwind CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
-
-        <!-- Font Awesome for Icons -->
-        <link href=
-        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-        rel="stylesheet" />
-
-        <!-- Link to Custom CSS -->
-        <link
-            rel="stylesheet"
-            href="style.css"
-        />
+        <!-- Apply font to body -->
+        <style>
+            body {
+                font-family: "Quicksand", sans-serif;
+            }
+        </style>
     </head>
-    <body class="bg-white text-gray-800">
-        <!-- Home Section -->
-        <section
-            class="h-screen flex flex-col items-center justify-center text-center px-4"
-        >
-            <div class="max-w-lg">
+    <body
+        class="flex flex-col items-center justify-center min-h-screen bg-white text-gray-800 gap-y-1"
+    >
+        <div class="h-44 flex-none"></div>
+        <!-- Logo and Tagline -->
+        <div class="flex-none text-center mb-8 max-w-md mt-3">
+            <img
+                src="./public/bpg_logo_b.png"
+                alt="BlackPebbleGames Logo"
+                class="mx-auto w-auto h-44 mb-8"
+            />
+            <h1 class="text-md font-bold mb-10">
+                Crafting unique <span class="fx fx-star">MEMORIES</span>
+                <br />
+                one <span class="fx fx-card">CARD</span> at a time
+            </h1>
+            <p class="text-sm text-gray-600">Welcome to Black Pebble Games!</p>
+            <p class="text-sm text-gray-600 pt-5">
+                We’re a small studio dedicated to bringing you creative,
+                engaging card games that spark imagination and challenge minds.
+                Our current pride and joy, SWAPPA, is a fast-paced game for
+                quick thinkers and memory jugglers. It’s designed to be fun,
+                unique, and something you’ll want to play again and again!
+            </p>
+        </div>
+
+        <div class="h-44 flex-none"></div>
+        <!-- Image and Caption -->
+        <div class="flex flex-col items-center mb-8 max-w-lg">
+            <div class="mb-8">
                 <img
-                    src="./public/bpg_logo_b.png"
-                    alt="BlackPebbleGames Logo"
-                    class="mx-auto w-auto h-96 mb-8"
+                    src="./public/swappa_front.png"
+                    alt="Descriptive Caption"
+                    class="w-full h-full object-cover rounded-lg shadow-lg"
                 />
-                <h1 class="text-2xl font-bold mb-10">
-                    Crafting unique <span class="fx fx-star">MEMORIES</span>
-                    <br />
-                    one <span class="fx fx-card">CARD</span> at a time
-                </h1>
-                <p class="text-lg text-gray-600">
-                    Welcome to Black Pebble Games!
-                </p>
-                <p class="text-lg text-gray-600 pt-5">
-                    We’re a small studio dedicated to bringing you creative,
-                    engaging card games that spark imagination and challenge
-                    minds. Our current pride and joy, SWAPPA, is a fast-paced
-                    game for quick thinkers and memory jugglers. It’s designed
-                    to be fun, unique, and something you’ll want to play again
-                    and again!
+            </div>
+            <p class="text-gray-600 text-sm text-center">
+                Dive into a game of memory and speed! In SWAPPA, you’ll discover
+                cards, try to remember as many as possible, and race against the
+                other players in removing them from the game. Suitable for ages
+                10 to 99, it’s a card game for everyone who loves party games
+                with a bit of quick thinking.
+            </p>
+        </div>
+
+        <!-- Colophon-->
+        <footer class="py-8 text-gray-800 text-sm">
+            <div class="text-center pb-2">
+                <a
+                    href="https://instagram.com"
+                    class="text-3xl"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+            </div>
+            <div class="text-center">
+                Contact us:
+                <a
+                    class="underline"
+                    href="mailto:info@blackpebblegam.es"
+                    >info@blackpebblegam.es</a
+                >
+                <p class="pb-2">
+                    &copy; 2024 Black Pebble Games. All rights reserved.
                 </p>
             </div>
-        </section>
-
-        <!-- Reel Section -->
-        <section
-            class="h-screen flex flex-col items-center justify-center text-center px-4"
-        >
-            <!-- Carousel -->
-            <div class="grow w-full flex h-full px-64 py-10">
-                <!-- Swappa -->
-                <div
-                    class="flex-1 flex-col flex items-center justify-center m-2 p-8 h-full"
-                >
-                    <div
-                        class="flex basis-1 card card-image rounded-xl shadow-xl mb-10"
-                    ></div>
-
-                    <p class="flex basis-1 h-52">
-                        Dive into a game of memory and speed! In SWAPPA, you’ll
-                        discover cards, try to remember as many as possible, and
-                        race against the other players in removing them from the
-                        game. Suitable for ages 10 to 99, it’s a card game for
-                        everyone who loves party games with a bit of quick
-                        thinking.
-                    </p>
-                </div>
-
-                <!-- Coming Soon -->
-                <div
-                    class="flex-1 flex-col flex items-center justify-center m-2 p-8 h-full"
-                >
-                    <div
-                        class="flex basis-1 card card-comingsoon rounded-xl shadow-xl mb-10 items-center justify-center"
-                    >
-                        <p class="text-white text-3xl w-full font-bold">
-                            <i class="fa-brands fa-instagram"></i>
-                        </p>
-                    </div>
-
-                    <p class="flex basis-1 h-52">
-                        Follow us as we craft new experiences and expand our
-                        collection of unique games. There’s always more to come
-                        from Black Pebble Games!
-                    </p>
-                </div>
-
-                <!-- Empty -->
-                <div
-                    class="flex-1 flex-col flex items-center justify-center m-2 p-8 h-full"
-                >
-                    <div
-                        class="flex basis-1 card card-empty rounded-xl mb-10 items-center justify-center"
-                    >
-                        COMING SOON
-                    </div>
-
-                    <p class="flex basis-1 h-52">And more!!</p>
-                </div>
-            </div>
-
-            <!-- Colophon -->
-            <footer class="flex-none py-8 text-gray-500">
-                <div class="text-center">
-                    <!-- <div
-                        class="container mx-auto flex justify-center space-x-6 pb-2 text-gray-700"
-                    >
-                        <a
-                            href="https://instagram.com"
-                            class="text-2xl"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                        <a
-                            href="https://linkedin.com"
-                            class="text-2xl"
-                            ><i class="fa-brands fa-linkedin"></i
-                        ></a>
-                    </div> -->
-                    Contact us:
-                    <a
-                        class="underline"
-                        href="mailto:info@blackpebblegam.es"
-                        >info@blackpebblegam.es</a
-                    >
-                    <p class="pb-5">
-                        &copy; 2024 Black Pebble Games. All rights reserved.
-                    </p>
-                </div>
-            </footer>
-        </section>
-        <script src="script.js"></script>
+        </footer>
     </body>
 </html>
